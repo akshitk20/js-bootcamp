@@ -167,12 +167,67 @@ console.log(order1); // NAN
 
 
 // loops
-let x = 0;
-while (x < 10) {
-    console.log(x);
-    x = x + 1;
+// let x = 0;
+// while (x < 10) {
+//     console.log(x);
+//     x = x + 1;
+// }
+
+// for (let x = 0 ; x < 10 ; x++) {
+//     console.log(x);
+// }
+
+// objects
+const car = {
+    make: "Chevy",
+    model : "Bel Air",
+    year : 1957,
+    speed : 0,
+    started : false,
+    start() {
+        if (!this.started) {
+            this.started = true;
+            console.log(`The car ${car.year} ${car.make} ${car.model} is starting`);
+        } else {
+            console.log(`The car ${car.year} ${car.make} ${car.model} has already started`);
+        }
+    },
+    stop : function() {
+        if (this.started) {
+            this.started = false;
+            this.speed = 0;
+            console.log(`The car ${car.year} ${car.make} ${car.model} has stopped`);
+        } else {
+            console.log(`The car ${car.year} ${car.make} ${car.model} has not started`);
+        }
+    },
+    drive(speed) {
+        if (this.started) {
+            this.speed = speed;
+            console.log(`The car ${car.year} ${car.make} ${car.model} is driving with ${car.speed}`);
+        } else {
+            console.log('You need to start the car first!!');
+        }
+    }
+};
+
+console.log(car);
+console.log(`car is a ${car.year} ${car.make} ${car.model}`);
+
+if (2024 - car.year > 25) {
+    console.log('Car is an antique!')
 }
 
-for (let x = 0 ; x < 10 ; x++) {
-    console.log(x);
-}
+car.speed = 100;
+console.log(`The car ${car.year} ${car.make} ${car.model} is travelling at ${car.speed}`);
+
+car.passengers = 2;
+car.start();
+car.start();
+car.stop();
+car.stop();
+
+car.start();
+car.drive(90);
+car.stop();
+car.drive(90);
