@@ -110,13 +110,15 @@ comments
 */
 
 // conditional
-let movieRating = 'PG'
+let movieRating = 'PG-13';
+let isCustomerAdult = true;
+
 if (movieRating === 'G') {
     console.log('Suitable for all ages');
 } else if(movieRating === 'PG') {
     console.log('May require Parental Guidance');
-} else if (movieRating == 'PG-13'){
-    console.log('Parents strongly cautioned. ');
+} else if (movieRating == 'PG-13' && isCustomerAdult){
+    console.log('Movie is suitable for you');
 } else {
     console.log('Not suitable for children');
 }
@@ -139,3 +141,26 @@ if (weird == NaN) {
 if (isNaN(weird)) {
     console.log("Its NAN"); // for NAN comparison
 }
+
+let testMe = "99";
+
+if (testMe == 99) {
+    console.log('they are equal');
+} else {
+    console.log('they are not equal');
+}
+
+let testMe1 = true;
+if (testMe1 == 1) {
+    console.log('they are equal');
+} else {
+    console.log('they are not equal');
+}
+
+let pizza = "pizza";
+let order = 3 + pizza; // concatenate
+console.log(order);
+
+let pizza1 = "pizza";
+let order1 = 3 * pizza1;
+console.log(order1); // NAN
