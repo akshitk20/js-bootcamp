@@ -246,3 +246,45 @@ console.log(sliced);
 let str2 = "Hello World World";
 let replaced = str2.replace("World", "Class");
 console.log(replaced);
+
+// arrays
+const values = [10,20,30,15,20];
+console.log(values);
+
+let value = values[0];
+console.log(value);
+
+let len = values.length;
+console.log(len);
+
+values[len] = 7;
+console.log(values);
+
+values.push(399);
+console.log(values);
+
+let end = values.pop();
+console.log(end);
+console.log(values);
+
+let start = values.shift();
+console.log(start);
+console.log(values);
+
+// values[3] = [98,99];
+// console.log(values);
+
+// value = values[3][1];
+// console.log(value);
+
+// let cars = {make: "Chevy", model: "Bel Air"};
+// values[4] = cars;
+console.log(values);
+
+let sum = 0;
+
+for (let i = 0 ; i < values.length ; i++) {
+    sum += values[i];
+}
+
+console.log(sum);
