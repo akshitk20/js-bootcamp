@@ -231,3 +231,18 @@ car.start();
 car.drive(90);
 car.stop();
 car.drive(90);
+
+// strings
+let str = "Hello word";
+console.log(str.length);
+
+let upper = str.toUpperCase();
+console.log(upper);
+console.log(str);
+
+let sliced = str.slice(0,5);
+console.log(sliced);
+
+let str2 = "Hello World World";
+let replaced = str2.replace("World", "Class");
+console.log(replaced);
