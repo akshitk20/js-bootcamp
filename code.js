@@ -71,3 +71,19 @@ console.log(rand);
 
 let rand1 = Math.round(Math.random() * 10) ;
 console.log(rand1);
+
+// Strings
+let greetings1 = "to quote him, \"mumble\"";
+console.log(greetings1);
+
+let greetings2 = 'Jim says "Hello"';
+console.log(greetings2);
+
+let greetings3 = `hello`;
+console.log(greetings3);
+
+let title = "Dr.";
+let surname = "Evil";
+let fullname = `${title} ${surname}`;
+console.log(fullname);
+
