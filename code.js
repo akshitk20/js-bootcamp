@@ -164,3 +164,15 @@ console.log(order);
 let pizza1 = "pizza";
 let order1 = 3 * pizza1;
 console.log(order1); // NAN
+
+
+// loops
+let x = 0;
+while (x < 10) {
+    console.log(x);
+    x = x + 1;
+}
+
+for (let x = 0 ; x < 10 ; x++) {
+    console.log(x);
+}
