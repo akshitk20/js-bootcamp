@@ -84,6 +84,36 @@ console.log(greetings3);
 
 let title = "Dr.";
 let surname = "Evil";
-let fullname = `${title} ${surname}`;
+let fullname = `${title} ${surname}`; // value of variable is substituted in string.
 console.log(fullname);
 
+// booleans
+
+let isHappy = true;
+let isSad = false;
+
+let score1 = 80;
+let attendence = 100;
+let passedFinal = score1 > 65;
+console.log(passedFinal);
+
+let perfectAttendance = (attendence === 100);
+console.log(perfectAttendance);
+
+let award = (passedFinal && perfectAttendance);
+console.log(award); 
+
+let notAward = !award;
+console.log(notAward);
+/*
+comments
+*/
+
+// conditional
+if (condition) {
+
+} else if(condition2) {
+
+} else {
+
+}
