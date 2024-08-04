@@ -110,10 +110,32 @@ comments
 */
 
 // conditional
-if (condition) {
-
-} else if(condition2) {
-
+let movieRating = 'PG'
+if (movieRating === 'G') {
+    console.log('Suitable for all ages');
+} else if(movieRating === 'PG') {
+    console.log('May require Parental Guidance');
+} else if (movieRating == 'PG-13'){
+    console.log('Parents strongly cautioned. ');
 } else {
+    console.log('Not suitable for children');
+}
 
+if (movieRating == 'G' || movieRating == 'PG') {
+    console.log("suitable for any kid");
+} else {
+    console.log('Not suitable for children');
+}
+
+let r = 1/0;
+if (r == Infinity) {
+    console.log('Wow infinity!');
+}
+
+if (weird == NaN) {
+    console.log("ITs NAn"); // nothing will happen
+}
+
+if (isNaN(weird)) {
+    console.log("Its NAN"); // for NAN comparison
 }
