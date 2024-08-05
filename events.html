@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Event Handling</title>
+	<style>
+.blackBg {
+	background-color: black;
+	color: white;
+}
+	</style>
+    <script>
+        function toggleBackground() {
+            let body = document.querySelector("body");
+            body.classList.toggle("blackBg");
+        }
+        function init() {
+            let button = document.getElementById("clickMe");
+            button.onclick = toggleBackground; // when we get onclick event togglebackground is called. no need to call explicitly
+            window.onresize = handleWindowReSize;
+        }
+
+        function handleWindowReSize() {
+            let div = document.querySelector("div#windowInfo");
+            div.innerHTML += " That tickles!";
+        }
+        window.onload = init; // it will assign on its own we are not calling
+        
+    </script>
+</head>
+<body>
+<h1>Handling events</h1>
+<button id="clickMe">Click me!</button>
+<div id = "windowInfo"></div>
+</body>
+
+</html>
