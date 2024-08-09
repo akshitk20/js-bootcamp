@@ -48,3 +48,23 @@ console.log(`HEllo my name is ${myName} and my age is ${myAge}`);
 
 const combine = myName + myAge;
 console.log(combine);
+
+// if else
+const age = 10;
+
+if (age > 18) {
+    console.log("You are good to go");
+} else {
+    console.log("You are not old enough");
+}
+
+// == will be true if values are same does not care abt type.  "18" == 18 true
+// ==== will be true if values are same and type also is same. 18 === 18 true
+
+const dice1 = 6;
+const dice2 = 6;
+if (dice1 == 6 && dice2 == 6) {
+    console.log("You rolled a double");
+} else {
+    console.log("You did not");
+}
