@@ -68,3 +68,18 @@ if (dice1 == 6 && dice2 == 6) {
 } else {
     console.log("You did not");
 }
+
+// arrays
+
+const schedule = ['wake up', 'eat', 'film a video', 'watch stuff on netflix'];
+
+console.log(schedule);
+
+console.log(schedule[0]);
+
+schedule.push('new value got added');
+console.log(schedule);
+
+const film = schedule.indexOf('film a video');
+console.log(film);
+
