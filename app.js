@@ -83,3 +83,20 @@ console.log(schedule);
 const film = schedule.indexOf('film a video');
 console.log(film);
 
+
+// objects and keyword this
+// function attach to objects are methods
+// this refers to current object
+const user = {
+   name : "Akshit",
+   age: 24,
+   married: false,
+   purchase : ['phone', 'car', 'laptop'],
+   sayName: function() {
+    console.log(this.name);
+   }
+}
+
+
+console.log(user.purchase);
+user.sayName();
