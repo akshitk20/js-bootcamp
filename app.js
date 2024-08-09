@@ -24,6 +24,27 @@ function toUpper(text) {
     console.log(upperCased);
 }
 
-const toUpper = () => {
+const toUpperArrow = () => { // arrow functions
     console.log("Hi");
 }
+
+toUpper("name");
+
+// string concatenation
+const myAge = 24;
+const yourAge = 21;
+
+console.log(myAge+yourAge);
+
+console.log("Hello my name is " + "Akshit");
+
+console.log('Hello it\'s me'); // escaping '
+
+console.log("Hello its me "); // use double quotes
+
+const myName = "Edwin";
+
+console.log(`HEllo my name is ${myName} and my age is ${myAge}`);
+
+const combine = myName + myAge;
+console.log(combine);
