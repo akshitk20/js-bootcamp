@@ -118,3 +118,44 @@ while(loading < 10) {
     loading++
 }
 
+// DOM manipulationn
+
+const text = document.querySelector('.title'); // grab the h1
+const changeColor = document.querySelector('.changeColor')
+
+text.style.color = 'red';
+
+text.style.backgroundColor = 'black';
+
+text.classList.add("change");
+
+// changeColor.addEventListener("click", function() {
+//     text.classList.toggle("change");
+// });
+
+const nameList = document.querySelector('.name-list');
+console.log(nameList);
+
+// for(u of nameList) {
+//     //console.log(user);
+//     u.addEventListener('click', function() {
+//         console.log(this);
+//         this.style.color = 'red';
+//     })
+// }
+
+const listInput = document.querySelector('.list-input');
+const addListBtn = document.querySelector('.addListBtn');
+
+addListBtn.addEventListener('click', function() {
+    // create an li
+    const newLi = document.createElement('LI');
+    const liContent = document.createTextNode(listInput.value);
+    console.log(listInput.value);
+    
+    // add input value inside new li
+    newLi.appendChild(liContent);
+
+    // attach li to nameList
+    nameList.appendChild(newLi);
+});
