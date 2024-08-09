@@ -100,3 +100,21 @@ const user = {
 
 console.log(user.purchase);
 user.sayName();
+
+// for loop while loop
+
+const names = ['Ed', 'Johm', 'Maria', 'Eliza', 'Burrito', 'Harry', 'Potter'];
+for(n of names) {
+    console.log(n);
+    if (n === 'Maria') {
+        console.log(`${n} is in my list`);
+        break;
+    }
+}
+
+let loading = 0;
+while(loading < 10) {
+    console.log('Website is loading')
+    loading++
+}
+
